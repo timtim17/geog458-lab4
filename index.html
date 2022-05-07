@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>geog458 lab 4</title>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Transit Stops with Awnings in the Greater Seattle Area</h1>
+            <p>
+                Visualizing locations of stops for busses and trains in the Greater Seattle Area
+                that have awnings. Awnings and other structures can help provide shelter from the
+                weather, as well as protection late at night. Awning and other infrastructure such
+                as lights can make a bus stop seem more complete and allow structure for riders to
+                feel secure rather than just a sign in the middle of the road. However, it costs
+                money to install this extra infrastructure, so many areas are underrepresented in
+                terms of having these structures in place.
+            </p>
+            <footer>
+                <em>
+                    <strong>Sources:</strong>
+                    <a href="https://mapbox.com">MapBox</a>,
+                    <a href="https://gis-kingcounty.opendata.arcgis.com/datasets/transit-stops-for-king-county-metro-transitstop-point/explore">
+                        King County GIS Open Data
+                    </a>
+                </em>
+            </footer>
+        </header>
+        <div id="map"></div>
+        <div id="legend">
+            <h2>Transit Stops</h2>
+            <h3><i></i> Stop with Awning</h3>
+        </div>
+        <div id="text-description">
+            <label>
+                <input type="checkbox" value="base">
+                Base Map
+            </label>
+            <label>
+                <input type="checkbox" value="trans">
+                🏳️‍⚧️ Theme
+            </label>
+            <label>
+                <input type="checkbox" value="transit_awning">
+                Thematic Layer
+            </label>
+            <label>
+                <input type="checkbox" value="awning_map">
+                Combined Basemap &amp; Data
+            </label>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
